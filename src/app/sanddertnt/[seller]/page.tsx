@@ -10,6 +10,7 @@ import {
 } from '@/components';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
+import '../../sandder.css';
 
 const getWhatsAppLink = (phone: string) => {
   const url = `https://api.whatsapp.com/send?phone=%2B591${phone}`;
@@ -22,6 +23,8 @@ const getSellerPhoneByName = (name: string) => {
       return '69748401';
     case 'willy':
       return '67055944';
+    case 'fabio':
+      return '69814094';
     default:
       return '69814094';
   }
@@ -69,6 +72,7 @@ const InfoSeller = (seller: string) => {
     </>
   );
 };
+
 const SellerPage = () => {
   const params = useParams();
 

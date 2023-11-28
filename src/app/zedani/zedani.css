@@ -1,0 +1,16 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    0deg,
+    hsl(360deg 79% 43%) 0%,
+    hsl(6deg 63% 50%) 19%,
+    hsl(8deg 67% 57%) 32%,
+    hsl(9deg 72% 63%) 42%,
+    hsl(10deg 76% 70%) 52%,
+    hsl(10deg 81% 76%) 60%,
+    hsl(10deg 86% 83%) 69%,
+    hsl(10deg 92% 89%) 78%,
+    hsl(10deg 98% 94%) 87%,
+    hsl(0deg 0% 100%) 100%
+  );
+}

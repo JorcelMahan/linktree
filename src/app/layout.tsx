@@ -4,8 +4,8 @@ import { GeistMono, GeistSans } from 'geist/font';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Sandder TNT',
-  description: 'Sandder TNT',
+  title: 'Trade Sandder Boliva SRL',
+  description: 'Trade Sandder Boliva SRL',
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='es' className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body>{children}</body>
+      <body className='body'>{children}</body>
     </html>
   );
 }
