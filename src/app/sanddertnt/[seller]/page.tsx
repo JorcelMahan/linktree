@@ -1,6 +1,7 @@
 'use client';
 
 import {
+  CatalogIcon,
   FacebookIcon,
   InstagramIcon,
   LinkCard,
@@ -40,24 +41,30 @@ const InfoSeller = (seller: string) => {
     },
     {
       id: 2,
+      href: 'https://sandder.com.bo/catalogos',
+      title: 'Catálogo',
+      icon: <CatalogIcon />,
+    },
+    {
+      id: 3,
       href: 'https://www.facebook.com/sandderTNT',
       title: 'Facebook',
       icon: <FacebookIcon />,
     },
     {
-      id: 3,
+      id: 4,
       href: 'https://www.tiktok.com/@sanddertnt',
       title: 'TikTok',
       icon: <TikTokIcon />,
     },
     {
-      id: 4,
+      id: 5,
       href: 'https://www.instagram.com/sanddertnt/',
       title: 'Instagram',
       icon: <InstagramIcon />,
     },
     {
-      id: 5,
+      id: 6,
       href: getWhatsAppLink(getSellerPhoneByName(seller)),
       title: 'WhatsApp',
       icon: <WhatsAppIcon />,
