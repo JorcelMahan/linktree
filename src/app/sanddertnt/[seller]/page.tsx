@@ -26,6 +26,8 @@ const getSellerPhoneByName = (name: string) => {
       return '67055944';
     case 'fabio':
       return '69814094';
+    case 'harol':
+      return '68013026';
     default:
       return '69814094';
   }
