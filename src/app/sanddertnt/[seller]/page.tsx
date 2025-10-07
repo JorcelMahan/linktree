@@ -1,5 +1,3 @@
-'use client';
-
 import {
   CatalogIcon,
   FacebookIcon,
@@ -9,14 +7,9 @@ import {
   WebsiteIcon,
   WhatsAppIcon,
 } from '@/components';
+import { getWhatsAppLink } from '@/utils';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
 import '../../sandder.css';
-
-const getWhatsAppLink = (phone: string) => {
-  const url = `https://api.whatsapp.com/send?phone=%2B591${phone}`;
-  return url;
-};
 
 const getSellerPhoneByName = (name: string) => {
   switch (name) {
@@ -33,7 +26,7 @@ const getSellerPhoneByName = (name: string) => {
   }
 };
 
-const InfoSeller = (seller: string) => {
+const InfoSeller = ({ seller }: { seller: string }) => {
   const dataSeller = [
     {
       id: 1,
@@ -82,10 +75,8 @@ const InfoSeller = (seller: string) => {
   );
 };
 
-const SellerPage = () => {
-  const params = useParams();
-
-  const seller = params.seller as string;
+const SellerPage = ({ params }: { params: { seller: string } }) => {
+  const seller = params.seller;
 
   return (
     <main className='flex items-center flex-col mx-auto w-full justify-center mt-16 px-8'>
@@ -104,7 +95,7 @@ const SellerPage = () => {
       <p className='text-center text-gray-800 mb-8'>
         Botines de seguridad para todo tipo de trabajo
       </p>
-      {InfoSeller(seller)}
+      <InfoSeller seller={seller} />
     </main>
   );
 };
