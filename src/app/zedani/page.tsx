@@ -6,6 +6,7 @@ import {
   WebsiteIcon,
   WhatsAppIcon,
 } from '@/components';
+import { zedaniCellPhone } from '@/constants';
 import Image from 'next/image';
 import './zedani.css';
 
@@ -36,7 +37,7 @@ const zedaniData = [
   },
   {
     id: 5,
-    href: 'https://api.whatsapp.com/send?phone=%2B59169810559',
+    href: `https://api.whatsapp.com/send?phone=%2B591${zedaniCellPhone}`,
     title: 'WhatsApp',
     icon: <WhatsAppIcon />,
   },

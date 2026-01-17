@@ -6,6 +6,7 @@ import {
   WebsiteIcon,
   WhatsAppIcon,
 } from '@/components';
+import { zedaniCellPhone } from '@/constants';
 import { getWhatsAppLink } from '@/utils';
 import Image from 'next/image';
 import '../zedani.css';
@@ -19,8 +20,7 @@ const getSellerPhoneByName = (name: string) => {
     case 'orlando':
       return '73524639';
     default:
-      // return '69810559';
-      return '68114227';
+      return zedaniCellPhone;
   }
 };
 
